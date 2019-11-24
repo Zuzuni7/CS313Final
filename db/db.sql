@@ -18,6 +18,8 @@
 --    liked_video_id SERIAL PRIMARY KEY
 --    , 
 --)
+DROP TABLE IF EXISTS users_;
+
 
 CREATE TABLE users_ 
 (
@@ -25,10 +27,8 @@ CREATE TABLE users_
     , username VARCHAR(24) NOT NULL
     , pw VARCHAR(40) NOT NULL
     , prefered_name VARCHAR(24) NOT NULL
-    , comments SERIAL 
-    , liked_videos SERIAL 
 );
 
 
-INSERT INTO users_ (username,pw,prefered_name,comments,liked_videos) VALUES ('bubba', 'password', 'Yaboi-skie',1,2);
+INSERT INTO users_ (username,pw,prefered_name) VALUES ('bubba', 'password', 'Yaboi-skie');
 
