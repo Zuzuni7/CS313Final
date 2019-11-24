@@ -32,3 +32,6 @@ CREATE TABLE users_
 
 INSERT INTO users_ (username,pw,prefered_name) VALUES ('bubba', 'password', 'Yaboi-skie');
 
+-- NO permissions to make an admin
+--CREATE USER FinalAdmin WITH PASSWORD 'admin';
+--GRANT SELECT, INSERT, UPDATE ON users_ TO quiet-ridge-88699;

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../../css/login.css" rel="stylesheet" type="text/css" >
+    <title>Login Page</title>
+</head>
+<body>
+<div>
+    <div>
+        <h1><em>Welcome!</em></h1>
+        <h2> Please log into your account</h2>
+    </div>
+    <div>
+        <form action="/views" method="GET">
+            <p><input type="text" name="username" value="" placeholder="Username or Email" required></p>
+                <p><input type="password" name="password" value="" placeholder="Password" required></p>
+                <p class="remember_me">
+                    <label>
+                        <input type="checkbox" name="remember_me" id="remember_me">
+                        Remember me on this computer
+                    </label>
+                </p>
+                <p class="submit"><input type="submit" name="commit" value="Login"></p>
+        </form>
+    </div>
+</div>
+</body>
+</html>
