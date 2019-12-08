@@ -63,18 +63,15 @@ app.post('/views', function(req,res) {
       else 
       {
         res.status(401);
-        res.send({
-          success: false
-        });
+        return res.sendFile('./pages/login.html',  {root: __dirname + "/views"});
+        //Wrong username or password
       }
     } 
     else
     {
      res.status(401);
-     res.send({
-       success: false
-    });
-    return res.redirect('/login');
+     return res.sendFile('./pages/login.html',  {root: __dirname + "/views"});
+    //empty fields
   }
 });
 //app.get('/views', validate.validateLogin);
