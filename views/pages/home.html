@@ -302,7 +302,8 @@
     <div class="login">
             <a name="video"></a>
         <p>My Latest Video!</p>
-        <video width="400" controls>
+        <button onclick="playPause()">Play/Pause</button> <!--Made to test video-->
+        <video width="400" controls id="video1">
                 <source src="../../media/SampleVideo1.mp4" type="video/mp4">
                     Video not supported.
          </video>
@@ -372,5 +373,13 @@
         navbar.classList.remove("sticky");
       }
     }
+    var myVideo = document.getElementById("video1"); 
+
+    function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
 </script>
 </html>
