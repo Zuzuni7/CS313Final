@@ -37,7 +37,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.get("/login", login);
 app.get('/', function(req,res){
-  res.sendFile('./pages/login.html', {root: __dirname + "/views"});
+  res.sendFile('/pages/login.html', {root: __dirname + "/views"});
 });
 app.get("/logout.html", function(req,res) {
     //end session
