@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="../../css/login.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Login Page</title>
     <style>
         
@@ -50,7 +51,15 @@
   background-color: rgb(12,4,6,0.74);
   color: white;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
+.sticky + .content {
+  padding-top: 60px;
+}
   body {
     font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
     color: #404040;
@@ -131,6 +140,7 @@
   .login p.remember_me {
     float: left;
     line-height: 31px;
+    width: 75%;
   }
   
   .login p.remember_me label {
@@ -241,22 +251,123 @@
 </head>
 <body>
 <div>
+    <div id="navbar">
         <div class="topnav">
-                <a class="active" href="#home">Home</a>
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
-              </div>
+            <a class="active" href="#about">About Me</a>
+            <a href="#video">Videos</a>
+            <a href="#music">Music</a>
+            <a href="#comment">Feedback</a>
+            <a href="logout.html">Logout</a>
+        </div>
+    </div>
+    <div class="login">
+        <p>Hello {Insert data username here}</p>
+        <img> <!--user default image/ profile picture-->
+    </div>
     <div class="login">
         <h1><em>Welcome to Shak's Page!</em></h1>
+        <div class="login" style="width: 75%;">
+            <a name="about"></a>
+            <img src=""> <!--Put his photos here in a carousel-->
+            <p>
+                Hey my name is Shak! Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Morbi pretium velit nec justo porta, ut blandit justo ullamcorper. Integer quis
+                 porttitor nunc. In nec iaculis diam. Morbi ut magna ac lacus lobortis consectetur. 
+                 Praesent metus justo, ornare at nulla egestas, laoreet finibus ipsum. Fusce a
+                  rutrum elit. Ut ac turpis in dui interdum volutpat et quis mi. Aliquam tristique
+                   molestie ante eu mattis. Mauris posuere cursus ipsum, sit amet ornare sapien 
+                   imperdiet in. Sed rhoncus erat gravida tempus sodales. Mauris eu sodales eros, 
+                   at molestie augue. Fusce auctor ante a augue interdum, non pulvinar purus pharetra. 
+                   Pellentesque velit purus, auctor quis condimentum vel, ullamcorper non nisl. 
+                   Sed nec mauris in dolor venenatis porttitor vitae at justo. <br/>
+                   Pellentesque pretium aliquam magna in vulputate. Cras elementum ipsum et aliquet 
+                   aliquam. Curabitur at metus vel metus lacinia sagittis. Donec risus risus, pretium 
+                   sollicitudin lectus non, euismod venenatis mi. Sed et placerat arcu. Praesent 
+                   posuere viverra velit, ac facilisis turpis tempus sed. Aenean in dapibus erat. 
+                   Nunc vitae nisl vel tortor gravida finibus nec at lacus.<br/> Integer eu lorem a justo 
+                   consequat dictum nec id nunc. Donec nec dui at nisl gravida vestibulum. Donec 
+                   varius nulla eu metus porttitor blandit sit amet in sapien. Nam quis egestas est. 
+                   Duis porttitor dapibus est, nec varius est gravida non. Donec id nunc at sapien 
+                   tempus efficitur. Maecenas nisi risus, tristique id felis in, scelerisque scelerisque 
+                   eros. Quisque molestie mattis nisi, non vestibulum magna viverra maximus. Suspendisse 
+                   eu mauris in nulla molestie bibendum. Ut purus felis, consectetur quis est vestibulum,
+                    tincidunt consequat arcu. Sed congue ex nec enim tincidunt sodales. Duis fringilla 
+                    odio magna, eget pretium lectus convallis in. Vestibulum scelerisque, risus id finibus
+                     gravida, dolor quam laoreet sem, ac iaculis elit velit eget augue. Pellentesque 
+                     sollicitudin vel enim nec elementum. Pellentesque habitant morbi tristique senectus 
+                     et netus et malesuada fames ac turpis egestas.
+                    </p>
+        </div>
     </div>
     <div class="login">
+            <a name="video"></a>
         <p>My Latest Video!</p>
-        <!-- <video src="../../media/SampleVideo1.mp4" >Test Video Link</video> -->
         <video width="400" controls>
                 <source src="../../media/SampleVideo1.mp4" type="video/mp4">
+                    Video not supported.
          </video>
     </div>
+    <div class="login">
+            <a name="music"></a>
+        <p>New Music Releases</p>
+        <p>Only(Remix) by Shak Sims (feat. NME Lines)</p>
+        <audio controls>
+            <source src="../../media/Only- Nicki Minaj, Chris Brown, Lil Wayne, and Drake- NME Lines (Shaktivity).mp3" type="audio/mp3">
+                This text displays if the audio tag isn't supported.
+        </audio>
+    </div>
+    <div class="login">
+            <a name="feedback"></a>
+            <div class="login" style="width: 75%;">
+            <p>
+            Donec id nunc at sapien tempus efficitur. Maecenas nisi risus, 
+            tristique id felis in, scelerisque scelerisque eros. Quisque 
+            molestie mattis nisi, non vestibulum magna viverra maximus. 
+            Suspendisse eu mauris in nulla molestie bibendum. Ut purus felis, 
+            consectetur quis est vestibulum, tincidunt consequat arcu. Sed 
+            congue ex nec enim tincidunt sodales. Duis fringilla odio magna, 
+            eget pretium lectus convallis in. Vestibulum scelerisque, risus
+            id finibus gravida, dolor quam laoreet sem, ac iaculis elit velit 
+            eget augue. Pellentesque sollicitudin vel enim nec elementum. 
+            Pellentesque habitant morbi tristique senectus et netus et malesuada 
+            fames ac turpis egestas.  Cras quis leo quis risus vehicula consectetur.
+            Nam eu varius erat, non lobortis velit. Vivamus mollis, ipsum id malesuada 
+            convallis, lorem urna scelerisque diam, sit amet elementum justo ligula id
+            est. Nam pharetra nisi non est ullamcorper, ut facilisis mi pharetra. 
+            Morbi congue convallis turpis, eu tempus diam interdum sed. Interdum 
+            et malesuada fames ac ante ipsum primis in faucibus. Aenean semper, 
+            ligula mattis hendrerit commodo, erat turpis placerat felis, nec
+            luctus ex purus sit amet tellus. Proin mattis blandit tortor, pulvinar
+            pretium velit mattis a. Integer pulvinar risus eget posuere egestas. 
+            Duis vel mi vulputate eros laoreet cursus. Curabitur ipsum nisl, 
+            congue non mauris a, varius suscipit risus. Quisque sed ligula at
+            quam elementum feugiat hendrerit eget nunc. Donec sodales ac nisl 
+            in tristique. Phasellus rhoncus felis quis erat malesuada hendrerit. 
+            Cras sit amet nulla libero. Fusce eu volutpat dui, at imperdiet justo.
+        </p>
+    </div>
+    </div>
 </div>
+<footer>
+    <div class="login">
+        <i class="fa fa-instagram" style="font-size:36px"></i>
+        <!--Link to instagram here-->
+        <a href="https://www.instagram.com/shaktivity/">Check out my Instagram!</a>
+        <i class="fa fa-soundcloud" aria-hidden="true"></i>
+        <a href="https://soundcloud.com/shakir-sims/">Check out my Soundcloud</a>
+    </div>
+</footer>
 </body>
+<script>
+    window.onscroll = function() {myFunction()};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+</script>
 </html>

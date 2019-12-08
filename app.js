@@ -39,6 +39,10 @@ app.get("/login", login);
 app.get('/', function(req,res){
   res.sendFile('./pages/login.html', {root: __dirname + "/views"});
 });
+app.get("/logout.html", function(req,res) {
+    //end session
+    res.end;
+});
 app.post('/views', function(req,res) {
   const username = req.body.username;
   const password = req.body.password;
